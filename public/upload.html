@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+</head>
+
+<body>
+
+    <h1>Upload a File</h1>
+
+    <form action="/upload"
+          method="POST"
+          enctype="multipart/form-data">
+
+        <label for="file">Choose a file:</label>
+
+        <input type="file"
+               id="file"
+               name="file"
+               required>
+
+        <br><br>
+
+        <button type="submit">
+            Upload File
+        </button>
+
+    </form>
+
+    <p>
+        Allowed file types:
+        JPG, JPEG, PNG, GIF, PDF, TXT
+    </p>
+
+    <p>
+        Maximum file size: 5 MB
+    </p>
+
+</body>
+
+</html>
